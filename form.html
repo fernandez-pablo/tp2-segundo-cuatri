@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <div id="centrarcontenido">
+        <header id="encabezado">
+            <nav>
+                <ul class="navmenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="disco.html">Discografía</a></li>
+                    <li><a href="form.html">Contacto</a></li>               
+                </ul>                             
+        </nav>
+        </header>
+        <main class="main">
+            <section class="secciona">
+                <div class="divimagen">
+                    <div class="contenedorform">
+                        <h1>Forma Parte de la Comunidad</h1>
+                        <p>Envianos tus datos y comentarios acerca de la cultura Funk en general. Forma parte de esta comunidada y no te pierdas las novedades y eventos</p>
+                        <form action="gracias.html" method="post" enctype="multipart/form-data"> 
+                            <div>
+                                <fieldset>
+                                    <legend><span>Tus datos</span></legend>
+                                        <span>Nombre</span>
+                                            <input type="text" name="nombre" required>
+                                        <span>Apellido</span>
+                                            <input type="text" name="apellido" >
+                                        <span>Email</span>
+                                            <input type="email" name="email" placeholder="email@email.com" autocomplete="off" required>
+                                </fieldset>
+                                <fieldset>
+                                    <legend><span>Contanos tus Gustos</span></legend>
+                                        <div class="areatexto">
+                                            <span>Deja tu comentario</span>
+				                            <textarea name="comentarios"> </textarea>
+                                        </div>
+                                        <p>¿Cuál de estos discos de James Brown te gusta más?</p>
+                                        <div class="checkbox">
+                                            <label for="la">Live at The Apollo</label>
+                                                <input id="la" type="checkbox" name="la" value="LA" checked>
+                            
+                                            <label for="sl">Say it Loud</label>
+                                                <input id="sl" type="checkbox" name="sl" value="SL" checked>
+                                            <label for="sm">Sex Machine</label>
+                                                <input id="sm" type="checkbox" name="sm" value="SM" checked>
+                            
+                                            <label for="h">Hell</label>
+                                                <input id="h" type="checkbox" name="h" value="H" checked>
+                                        </div>
+                                        <div class="compartir">
+                                        <span>Comparti una foto o imagen:</span>
+			                            <input type="file" name="archivo" accept="image/jpeg, image/png">
+                                        </div>            
+                                </fieldset>
+                                <div class="contenedorenviar">
+                                    <input type="submit"  id="enviar" value="Enviar"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>                         
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a id="fb" href="https://www.facebook.com/JamesBrown/" target="_blank" title="enlace a facebook de James Brown">Facebook</a></li>
+                <li><a id="tw" href="https://x.com/JamesBrownMusic" target="_blank" title="enlace a Twitter de James Brown">Twitter</a></li>
+                <li><a id="yt" href="https://www.youtube.com/channel/UCOCZxe0gNRA7c3PGWPGoiGg" target="_blank" title="enlace a youtube de James Brown">You Tube</a></li>
+            </ul>
+            <div>
+                <span>&copy; Copyright</span>
+                <p>Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
